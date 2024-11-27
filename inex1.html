@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=0
+        let infan=parseInt(prompt("Ingrese cuanta parte de su infancia: x/..."));
+        let jo=parseInt(prompt("Ingrese cuanto duro su juventud: x/..."));
+        let casarse=parseInt(prompt("Ingrese en que parte de su vida se caso: x/..."));
+        let hijo=parseInt(prompt("Ingrese cuantos años despues tuvo un hijo"));
+        let mh=parseInt(prompt("Ingrese cuanto vivio su hijo: x/..."));
+        let mu=parseInt(prompt("Ingrese cuantos años despues murio Diofanto"));
+        let ec=(x/infan)+x/jo+(x/casarse)+hijo+(x/mh)+(mu);
+        while (x!=ec){
+            x=x+1;
+            ec=(x/infan)+(x/jo)+(x/casarse)+hijo+(x/mh)+mu;
+        }
+        console.log("La edad de muerte es: "+ec)
+    </script>
+</body>
+</html>
